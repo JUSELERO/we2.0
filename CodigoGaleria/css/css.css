@@ -1,0 +1,159 @@
+* {font-family: 'Alata', sans-serif;
+}
+
+.centrarContenido-Form{
+    min-height: 500px;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.padding-10{padding: 10px;}
+
+.bg-orange-style{
+    background-color:  #720094;
+    color: #f5fbf1 ;
+    box-shadow: 0px 0px 20px #fd7106 ;
+}
+.bg-violet-style{
+    background-color:  #fd7106;
+    color: #f5fbf1 ;
+    box-shadow: 5px 5px 20px #720094 ;
+}
+.nav-bar-style{
+	background-color:  #720094;
+	color: #f5fbf1 ;
+	border-color:10xp solid black;
+}
+#nav-bar-style{
+	background-color:  #720094;
+	color: #f5fbf1 ;
+	border-color:10xp solid black;
+}
+
+.nav-img{
+	border: 1px solid #720094 ;
+	border-radius: 25px;
+}
+.button-color-violet{
+    background-color: #720094;
+
+}
+.button-color-orange{
+    background-color:#fd7106 ;
+
+}
+#img-noticias{
+    display: flex;
+    flex-wrap: wrap;
+}
+/* caracteristicas Grid de noticias*/
+.wrapper-grid{
+    display: flex; /* IE10 */
+    flex-wrap: wrap; /* IE10 */
+    max-width: 1000px;
+    width: 85%;
+    margin: auto;
+    margin-bottom: 3px;
+    padding: 0 4px;
+
+    /*grid-auto-rows: 56.25%;*/
+}
+.texto-ban:hover{
+    background-color: #fd7106d7;
+    color: white;
+}
+.tarjeta .texto-ban span{
+    margin-left: 5px;
+}
+.texto-ban{
+    position: absolute;
+    bottom: 0px;
+    text-align: left;
+    color: #720094;
+    width: 100%;
+    height: 30%;
+    background-color: #fd710671;
+
+}
+.tarjeta{
+    position: relative;
+    text-align: center;
+    color: white;
+}
+.column{
+    flex: 50%;
+    max-width: 50%;
+    padding: 0 4px;
+}
+.column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+
+  }
+
+  /* Responsive layout - makes a two column-layout instead of four columns */
+  @media screen and (max-width: 800px) {
+    .column {
+      -ms-flex: 50%;
+      flex: 50%;
+      max-width: 50%;
+    }
+  }
+
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .column {
+      -ms-flex: 100%;
+      flex: 100%;
+      max-width: 100%;
+    }
+    .parts {
+        -ms-flex: 100%;
+        flex: 100%;
+        max-width: 100%;
+      }
+  }
+  .view-gen{
+    display: flex; /* IE10 */
+    flex-wrap: wrap; /* IE10 */
+    max-width: 1000px;
+    width: 85%;
+    margin: auto;
+    margin-bottom: 3px;
+    padding: 0 4px;
+    height: 85vh;
+    border:3px solid #fd7106;
+    border-radius: 5px;
+  }
+.bordeado{
+    border:3px solid #fd7106;
+    border-radius: 5px;
+}
+  .parts{
+    display: flex;
+    flex:50%;
+    vertical-align: middle;
+    }
+.por-span{
+    padding:20px;
+    align-self: center;
+}
+.button-log-up{
+    align-items: space-between;
+    margin-top: 5px;
+}
+.margenes-basic{
+    margin-bottom: 10px;
+    margin-top: 10px;
+
+}
+/* warning to password register rigth o wrong*/
+.ocultar {
+    display: none;
+}
+
+.mostrar {
+    display: block;
+}
