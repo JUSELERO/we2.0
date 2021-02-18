@@ -1,0 +1,26 @@
+version: '3.6'
+services:
+ web:
+    build:
+     context: ./
+     dockerfile: Dockerfile
+    container_name: php72
+    depends_on:
+      - db
+    volumes:
+      - /home/juselero/Desktop/appswen/web2.0:/var/www/html
+    ports:
+      - 8080:80  
+
+ db:
+    container_name: mysql8
+    image: mysql:8.0.23
+    
+    restart: always
+    volumes:
+      - /home/juselero/Escritorio/appswen/web2.0/mysql:/var/lib/mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: xcocuy32@   
+    ports:
+      - 6033:3306
+ 
